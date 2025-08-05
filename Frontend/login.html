@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login & Register - Blue Bridge Academy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>BLUE BRIDGE ACADEMY</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="contact.html">CONTACT-US</a></li>
+                <li><a href="course.html">COURSES</a></li>
+                <li><button><a href="login.html">LOGIN</a></button></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Auth Container -->
+    <div class="auth-container">
+        <div class="auth-wrapper">
+            <!-- Login Section -->
+            <div class="login-section">
+                <div class="auth-left">
+                    <div class="logo">
+                        <img src="blue.jpg" alt="Bridge" />
+                    </div>
+                    <h1>Welcome Back!</h1>
+                    <p>Login to access your account and continue your IMU-CET preparation journey.</p>
+                </div>
+                <div class="auth-right">
+                    <form id="loginForm">
+                        <h2>Login</h2>
+
+                        <div class="form-group">
+                            <label for="loginEmail">Email Address</label>
+                            <input type="email" id="loginEmail" name="email" required placeholder="Enter your email" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" id="loginPassword" name="password" required
+                                placeholder="Enter your password" />
+                        </div>
+
+                        <div class="form-group remember-me">
+                            <label><input type="checkbox" name="remember" /> Remember me</label>
+                            <a href="#" class="forgot-password">Forgot password?</a>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Login</button>
+
+                        <div class="auth-toggle">
+                            <p id="loginToggleText">Don't have an account? <a href="#" id="showRegister">Register
+                                    here</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Register Section -->
+            <div class="register-section" style="display: none;">
+                <div class="auth-left">
+                    <div class="logo">
+                        <img src="blue.jpg" alt="Bridge" />
+                    </div>
+                    <h1>Join Blue Bridge Academy!</h1>
+                    <p>Create your account to start your IMU-CET preparation journey with us.</p>
+                </div>
+                <div class="auth-right">
+                    <form id="registerForm">
+                        <h2>Register</h2>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required
+                                    placeholder="Enter first name" />
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required
+                                    placeholder="Enter last name" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="registerEmail">Email Address</label>
+                            <input type="email" id="registerEmail" name="email" required
+                                placeholder="Enter your email" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="registerPhone">Phone Number</label>
+                            <div class="mobile-input">
+                                <select name="country-code" id="country-code-reg">
+                                    <option value="+91" selected>IN +91</option>
+                                </select>
+                                <input type="tel" id="registerPhone" name="phone" required
+                                    placeholder="Enter phone number" maxlength="10" pattern="[0-9]{10}" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="registerPassword">Password</label>
+                            <input type="password" id="registerPassword" name="password" required
+                                placeholder="Create password (min 8 characters)" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" required
+                                placeholder="Confirm your password" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="courseInterest">Interested Course</label>
+                            <select id="courseInterest" name="courseInterest" required>
+                                <option value="">Select a course</option>
+                                <option value="imu-cet">IMU-CET Preparation</option>
+                                <option value="merchant-navy">Company-Specific Batch(1.0)</option>
+                                <option value="deck-cadet">Company-Combine Batch(2.5)</option>
+                                <option value="engine-cadet">Surya Batch(3.0)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group terms">
+                            <label>
+                                <input type="checkbox" name="terms" required />
+                                I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Create Account</button>
+
+                        <div class="auth-toggle">
+                            <p id="registerToggleText">Already have an account? <a href="#" id="showLogin">Login
+                                    here</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Call/WhatsApp Now : 9942259795</p>
+        <p>&copy; 2024 Blue Bridge Academy. All rights reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        const loginSection = document.querySelector('.login-section');
+        const registerSection = document.querySelector('.register-section');
+        const showRegister = document.getElementById('showRegister');
+        const showLogin = document.getElementById('showLogin');
+
+        showRegister.addEventListener('click', (e) => {
+            e.preventDefault();
+            loginSection.style.display = 'none';
+            registerSection.style.display = 'flex';
+        });
+
+        showLogin.addEventListener('click', (e) => {
+            e.preventDefault();
+            registerSection.style.display = 'none';
+            loginSection.style.display = 'flex';
+        });
+
+        // Register Submit
+        document.getElementById('registerForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = document.getElementById('registerEmail').value;
+            const password = document.getElementById('registerPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (password !== confirmPassword) {
+                alert('Passwords do not match!');
+                return;
+            }
+
+            try {
+                const res = await fetch('http://localhost:5000/api/auth/register', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, password }),
+                });
+
+                const data = await res.json();
+
+                if (res.ok) {
+                    alert('Registration successful! Please log in.');
+                    showLogin.click();
+                } else {
+                    alert(data.msg || 'Registration failed.');
+                }
+            } catch (err) {
+                alert('Server error. Try again later.');
+            }
+        });
+
+        // Login Submit
+        document.getElementById('loginForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+
+            try {
+                const res = await fetch('http://localhost:5000/api/auth/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, password }),
+                });
+
+                const data = await res.json();
+
+                if (res.ok) {
+                    localStorage.setItem('token', data.token);
+                    alert('Login successful!');
+                    window.location.href = 'course.html';
+                } else {
+                    alert(data.msg || 'Invalid credentials.');
+                }
+            } catch (err) {
+                alert('Server error. Try again later.');
+            }
+        });
+    </script>
+</body>
+
+</html>

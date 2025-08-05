@@ -1,0 +1,80 @@
+display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    color: rgb(222, 222, 45);
+    background-color: whitesmoke;
+    min-height: 50px;
+}
+=======
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: whitesmoke;
+    min-height: 50px;
+    align-items: center;
+}
+<<<<<<< SEARCH
+.header img {
+
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+=======
+.header img {
+
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #003366; /* dark blue */
+    font-weight: bold;
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+<<<<<<< SEARCH
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+=======
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 6px 8px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f7941d; /* orange on hover */
+}
+
+/* Highlight CONTACT-US link */
+nav ul li:nth-child(2) a {
+    color: #f7941d;
+    font-weight: 700;
+}
+
+/* Style LOGIN link as button */
+nav ul li:last-child a {
+    border: 1.5px solid black;
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-weight: 700;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li:last-child a:hover {
+    background-color: black;
+    color: white;
+}

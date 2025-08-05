@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blue Bridge Academy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header">
+        <h1>BLUE BRIDGE ACADEMY</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">HOME</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="course.html">COURSES</a></li>
+                <li><a href="login.html" class="login-btn">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <marquee>Any Enquiry Contact Me at: call/Whatsapp : 9942259795<br> NDA Coaching are available Please check Courses
+    </marquee><br>
+
+    <main class="intro-container">
+        <h1>IMU-CET PREPARATION - 2026</h1>
+        <h2>CRACK <span class="highlight1">IMU-CET</span> <span class="changing-text"></span></h2>
+        <h2>THE BEST BATCHES TODAY!</h2>
+        <div class="p">
+            <p>Start your journey to the Merchant Navy with our expert guidance,</p>
+            <p>handwritten notes and real-world mock interviews!</p>
+            <button class="course-btn" onclick="window.location.href='course.html'">Get Course</button>
+        </div>
+        <!-- Chatbot Trigger Button -->
+        <div class="chatbot-toggle" onclick="toggleChatbot()">💬</div>
+
+    </main>
+    <!-- Chatbot Trigger Button -->
+    <div class="chatbot-toggle" onclick="toggleChatbot()">💬</div>
+
+    <!-- Chatbot Window -->
+    <div class="chatbot-container" id="chatbot">
+        <div class="chatbot-header">Chat with us</div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="bot-message">Hi! How can I help you today?</div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="user-input" placeholder="Type a message..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <section class="about-section">
+        <div class="about-container">
+            <h2>About Blue Bridge Academy</h2>
+            <p>
+                At <strong>Blue Bridge Academy</strong>, we are dedicated to empowering students to conquer the IMU-CET
+                and begin their journey toward a rewarding career in the Merchant Navy. With a focus on expert-led
+                training, real-world mock interviews, and personalized mentorship, we prepare future marine leaders with
+                confidence and skill.
+            </p>
+
+            <div class="about-grid">
+                <div class="about-box">
+                    <h3>Our Mission</h3>
+                    <p>
+                        To provide top-notch coaching and mentoring for IMU-CET aspirants by combining handwritten
+                        resources, expert faculty, and cutting-edge learning strategies.
+                    </p>
+                </div>
+                <div class="about-box">
+                    <h3>Our Vision</h3>
+                    <p>
+                        To be the leading maritime preparatory academy in India, known for consistently producing
+                        industry-ready professionals with discipline, dedication, and knowledge.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="guide-section">
+        <div class="guide-container">
+            <h2>Become a Guide</h2>
+            <p>Join our mission to mentor the next generation of Merchant Navy aspirants. If you’ve cleared IMU-CET or
+                have sailing experience, help shape futures!</p>
+            <button onclick="window.location.href='guide-register.html'">Apply as Guide</button>
+        </div>
+    </section>
+    <section class="evaluation-section">
+        <div class="evaluation-container">
+            <h2>Evaluate Your Experience</h2>
+            <p>Help us improve by sharing your thoughts about our course, faculty, and materials.</p>
+            <form action="#" method="POST" class="evaluation-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="feedback" rows="4" placeholder="Your feedback..." required></textarea>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="testimonials-section">
+        <div class="testimonials-container">
+            <h2>What Our Students Say</h2>
+            <div class="testimonial-cards">
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        “Blue Bridge Academy helped me crack IMU-CET in my first attempt! The handwritten notes and mock
+                        interviews were game-changers.”
+                    </p>
+                    <h3 class="testimonial-name">— Aryan Kumar</h3>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        “I loved the personal attention from faculty. The courses were focused, motivating, and easy to
+                        follow.”
+                    </p>
+                    <h3 class="testimonial-name">— Sneha Raj</h3>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        “Their mock tests and practical approach made me feel confident on exam day. Highly
+                        recommended!”
+                    </p>
+                    <h3 class="testimonial-name">— Rohit Sharma</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <p>Call/WhatsApp Now : 9942259795</p>
+        <p>Limited Seats Available - Enroll Early to Secure Your Spot!</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

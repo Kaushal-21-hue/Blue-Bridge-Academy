@@ -1,0 +1,851 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+marquee {
+    background-color: #f2f2f2;
+    font-size: 17px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    color: rgb(222, 222, 45);
+    background-color: whitesmoke;
+    border: none;
+}
+
+.header img {
+
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: rgb(223, 169, 68);
+}
+
+.intro-container {
+    padding: 20px 40px;
+    margin-top: 110px;
+}
+
+.intro-container h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+    margin: 10px 0;
+}
+
+.intro-container h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.intro-container p {
+    color: black;
+    font-size: 20px;
+}
+
+.highlight1 {
+    color: rgb(241, 159, 5);
+}
+
+.p {
+    padding-top: 10px;
+}
+
+.intro-image {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.course-btn {
+    background-color: rgb(241, 159, 5);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.header nav ul li button {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 130px;
+    color: #2d3e50;
+}
+
+/* Contact Page Styles */
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-header h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    font-size: 18px;
+    color: #666;
+}
+
+.contact-content {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-form-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-form-section h2,
+.contact-info-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #f1a005;
+}
+
+.submit-btn {
+    background-color: #f1a005;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #d89004;
+}
+
+.contact-item {
+    margin-bottom: 25px;
+}
+
+.contact-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.contact-item a {
+    color: #f1a005;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    background-color: #f1a005;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #d89004;
+    text-decoration: none;
+}
+
+.map-section {
+    margin-top: 40px;
+}
+
+.map-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.map-container {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-container {
+        padding: 10px;
+        margin-top: 80px;
+    }
+
+    .contact-header h1 {
+        font-size: 28px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f9f9;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.header h1 {
+    color: #153e90;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f1a005;
+}
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    background: #f9fbff;
+    min-height: 90vh;
+}
+
+.auth-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    width: 100%;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.login-section,
+.register-section {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    display: none;
+}
+
+.login-section {
+    display: flex;
+}
+
+.auth-left,
+.auth-right {
+    flex: 1;
+    padding: 1.5rem;
+}
+
+.auth-left {
+    background: #e7efff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.auth-left img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.auth-right h2 {
+    margin-bottom: 1rem;
+    font-size: 24px;
+    color: #2d3e50;
+}
+
+/* Forms */
+.form-group,
+.form-row {
+    margin-bottom: 1rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.mobile-input {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.mobile-input select {
+    width: 80px;
+}
+
+button.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background: #2d3e50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button.btn-primary:hover {
+    background: #1c2938;
+}
+
+.auth-toggle {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.auth-toggle a {
+    color: #2d3e50;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #2d3e50;
+    color: white;
+    font-size: 14px;
+    position: relative;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .login-section,
+    .register-section {
+        flex-direction: column;
+    }
+
+    .auth-left {
+        display: none;
+    }
+}
+
+.changing-text::before {
+    content: "WITH CONFIDENCE-JOIN";
+    /* Default content */
+    animation: text-change 5s infinite;
+    /* Apply the animation */
+}
+
+@keyframes text-change {
+    0% {
+        content: "Start Strong – Join Now";
+    }
+
+    25% {
+        content: "...............";
+    }
+
+    50% {
+        content: "Own Your Future – Join Us";
+    }
+
+    75% {
+        content: ". . . .";
+    }
+
+    100% {
+        content: "WITH CONFIDENCE-JOIN";
+    }
+}
+
+.chatbot-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #153e90;
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+.chatbot-container {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    font-family: 'Inter', sans-serif;
+}
+
+.chatbot-header {
+    background-color: #153e90;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.chatbot-messages {
+    padding: 10px;
+    overflow-y: auto;
+    flex-grow: 1;
+    max-height: 250px;
+}
+
+.chatbot-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+
+.chatbot-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.chatbot-input button {
+    background-color: #153e90;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.bot-message,
+.user-message {
+    margin: 5px 0;
+    padding: 8px 12px;
+    border-radius: 8px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.bot-message {
+    background-color: #e9e9ff;
+    align-self: flex-start;
+}
+
+.user-message {
+    background-color: #d1f1ff;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.about-section {
+    padding: 60px 20px;
+    background-color: #FFFDD0;
+    color: #153e90;
+    font-family: 'Inter', sans-serif;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #153e90;
+    font-weight: 700;
+}
+
+.about-container p {
+    font-size: 16px;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+.about-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.about-box {
+    background: white;
+    border: 2px solid #153e90;
+    border-radius: 12px;
+    padding: 25px;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(21, 62, 144, 0.1);
+    text-align: left;
+}
+
+.about-box h3 {
+    color: #ff5a1f;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.about-box p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .about-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-box {
+        width: 90%;
+    }
+}
+
+.testimonials-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+.testimonials-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonials-container h2 {
+    font-size: 32px;
+    color: #153e90;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.testimonial-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: #f5f8ff;
+    border-left: 4px solid #153e90;
+    padding: 25px;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-text {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.testimonial-name {
+    font-weight: 600;
+    color: #ff5a1f;
+    font-size: 16px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .testimonial-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-card {
+        width: 90%;
+    }
+}
+
+/* Become a Guide Section */
+.guide-section {
+    background-color: #f0f6ff;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.guide-container h2 {
+    font-size: 30px;
+    color: #153e90;
+    margin-bottom: 20px;
+}
+
+.guide-container p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.guide-container button {
+    background-color: #153e90;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.guide-container button:hover {
+    background-color: #0e2b6f;
+}
+
+
+/* Experience Evaluation Form */
+.evaluation-section {
+    background-color: #FFFDD0;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.evaluation-container h2 {
+    font-size: 30px;
+    color: #153e90;
+    margin-bottom: 20px;
+}
+
+.evaluation-container p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.evaluation-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.evaluation-form input,
+.evaluation-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.evaluation-form button {
+    background-color: #153e90;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.evaluation-form button:hover {
+    background-color: #0d2b6e;
+}

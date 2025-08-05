@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Blue Bridge Academy</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>BLUE BRIDGE ACADEMY</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="contact.html">CONTACT-US</a></li>
+                <li><a href="course.html">COURSES</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </div>
+    <form class="contact-form" action="http://localhost:5001/api/contact" method="POST">
+
+        <div class="contact-container">
+            <div class="contact-header">
+                <h1>Contact Us</h1>
+                <p>Get in touch with us for any queries about IMU-CET preparation</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-form-section">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="admission">Admission Inquiry</option>
+                                <option value="course">Course Information</option>
+                                <option value="payment">Payment Related</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Enter your message here..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info-section">
+                    <h2>Get in Touch</h2>
+
+
+                    <div class="contact-item">
+                        <h3>Phone</h3>
+                        <p>Call/WhatsApp: <a href="tel:+919942259795">+91 99422 59795</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>Office Hours</h3>
+                        <p>Monday: 9:00 AM - 6:00 PM</p>
+                        <p>Tuesday: 9:00 AM - 6:00 PM</p>
+                        <p>Wednesday: 9:00 AM - 6:00 PM</p>
+                        <p>Thursday: 9:00 AM - 6:00 PM</p>
+                        <p>Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Saturday: 10:00 AM - 4:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+
+                    <div class="social-links">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">Facebook</a>
+                            <a href="#" class="social-icon">Instagram</a>
+                            <a href="#" class="social-icon">WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+    <footer>
+        <p>Call/WhatsApp Now : 9942259795</p>
+        <p>&copy; 2024 Blue Bridge Academy. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

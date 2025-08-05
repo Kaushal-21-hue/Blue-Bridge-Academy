@@ -1,0 +1,177 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    background: #f9f9fb;
+    color: #1a1a1a;
+}
+
+.modal {
+    display: flex;
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    min-height: 400px;
+}
+
+/* Left side */
+.modal-left {
+    background: linear-gradient(90deg, #e6e9f7 0%, #f7f5ff 100%);
+    flex: 1.2;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.modal-left h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+.modal-left p {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+/* Features grid */
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.feature-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #374151;
+}
+
+.feature-card .icon {
+    font-size: 1.8rem;
+}
+
+/* Right side */
+.modal-right {
+    flex: 1;
+    padding: 40px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 320px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px 25px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.login-form h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+.login-form label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: #4b5563;
+}
+
+.mobile-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.mobile-input select {
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background: #f9fafb;
+    font-size: 0.9rem;
+    color: #374151;
+    cursor: pointer;
+    min-width: 90px;
+}
+
+.mobile-input input[type="tel"] {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: #111827;
+}
+
+.mobile-input input[type="tel"]::placeholder {
+    color: #9ca3af;
+}
+
+.btn-otp {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #a78bfa;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-otp:hover {
+    background-color: #8b5cf6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .modal {
+        flex-direction: column;
+        max-width: 100%;
+        margin: 20px;
+    }
+
+    .modal-left,
+    .modal-right {
+        flex: none;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
